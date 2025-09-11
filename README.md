@@ -24,3 +24,15 @@ Scrutinize every wavelet system in Sobolev spaces!
 - 그래서 UEP가 아니라 mixed extension principle(MEP) 활용
 - 근데 이 결과 너무 notation heavy하고 좀 더 practical side로 쓰여있었던 것 같아서 좀 더 MRA의 approximation space와 detail space구조로 좀 더 읽어내봐야 될 필요가 있어보임.
 그 때, [2010Ehler]The_multiresolution_structure_of_pairs_of_dual_wavelet_frames_for_a_pair_of_Sobolev_spaces가 도움이 될 것 같음. 나란히 놓고 읽어보기.
+
+[11 Sep, 2025]
+
+#[Hernandez,Weiss]A_first_course_on_wavelets
+
+- See Chp 6 (Mainly, Chp 6.6, with Chp 5.1,2, and 6.1.2)
+- 아니 애초에 wavelet characterization을 되짚어 다시 잘 생각해보면 그 inequality자체가 애초에 frame assumption이잖아? 라는 생각으로 
+그러면 내가 이제까지 맨날 공부하던 함수공간을 wavelet coefficient로 characterize하는 것 자체가 wavelet frame을 주는 거 아니야? 하는 서늘한 생각으로 다시 back to the basic.
+- 약간 처리를 해줘야 될 부분은 있지만 적어도 orthonormal basis에서 시작하면 frame (사실은 더 나아가서 다른 함수공간에서도 orthonormal basis까지도)으로 어느정도 고려해줄 수 있을듯 (적어도 Sobolev에서는 -- Hilbert space니까)
+- 오늘 앞에 작업은 다 봐뒀으니까 Chp 6.6 툴들 의미생각하면서 자세히 읽어내면 될듯. 또 harmonic 딥하게 쓰이면 계산가능하단 것 이상의 의미를 읽어낼 수 있을지는 모르겠는데 그래도 다시 시도해봐야지 어떡해.
+- Chp 6.6 이 사실은 [Meyer]Wavelets and Operators의 Chp 2.7. Theorem 6의 친절한 버전인거 같긴함
+- 모쪼록 이거 보고나면, 이거 조건 활용해서 그대로 approximation error로 접근해보는 것도 방법일듯
