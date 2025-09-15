@@ -36,3 +36,13 @@ Scrutinize every wavelet system in Sobolev spaces!
 - 오늘 앞에 작업은 다 봐뒀으니까 Chp 6.6 툴들 의미생각하면서 자세히 읽어내면 될듯. 또 harmonic 딥하게 쓰이면 계산가능하단 것 이상의 의미를 읽어낼 수 있을지는 모르겠는데 그래도 다시 시도해봐야지 어떡해.
 - Chp 6.6 이 사실은 [Meyer]Wavelets and Operators의 Chp 2.7. Theorem 6의 친절한 버전인거 같긴함
 - 모쪼록 이거 보고나면, 이거 조건 활용해서 그대로 approximation error로 접근해보는 것도 방법일듯
+
+[15 Sep, 2025]
+
+#[1989Mallat]MRA_and_WOB_of_L2
+
+- See Theorem 3
+- 그토록 찾아 헤매던 approximation error에 관한 결과
+- 근데 정확히 원하는 형태인지는 좀 더 체크해봐야됨. 생각보다 조금은 거리가 있는 것 같긴해서 원하는 것에서 얼마나 먼지 체크해봐야댐
+- 그리고 wavelet system의 orthonormality에 엄청나게 depend하는 증명인 것 같아서 그거 들어내려면 쉽지 않을듯.
+- 그래도 찾음 ㅠㅠ
