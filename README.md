@@ -45,4 +45,3 @@ Scrutinize every wavelet system in Sobolev spaces!
 - 그토록 찾아 헤매던 approximation error에 관한 결과
 - 근데 정확히 원하는 형태인지는 좀 더 체크해봐야됨. 생각보다 조금은 거리가 있는 것 같긴해서 원하는 것에서 얼마나 먼지 체크해봐야댐
 - 그리고 wavelet system의 orthonormality에 엄청나게 depend하는 증명인 것 같아서 그거 들어내려면 쉽지 않을듯.
-- 그래도 찾음 ㅠㅠ
