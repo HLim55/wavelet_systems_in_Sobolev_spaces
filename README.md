@@ -45,11 +45,8 @@ Scrutinize every wavelet system in Sobolev spaces!
 - 그토록 찾아 헤매던 approximation error에 관한 결과
 - 근데 정확히 원하는 형태인지는 좀 더 체크해봐야됨. 생각보다 조금은 거리가 있는 것 같긴해서 원하는 것에서 얼마나 먼지 체크해봐야댐<br>
 => 일단은 원하는 error estimate은 맞음.. [18 Sep, 2025]<br>
-For $f \in H^s$, there exists \(C>0\) such that 
-$$ 
-\lVert f - P_j f \rVert^2 \leq C 2^{-2js} \quad \text{for every } j \in \mathbb{Z}. 
-$$
-- 그리고 wavelet system의 orthonormality에 엄청나게 depend하는 증명인 것 같아서 그거 들어내려면 쉽지 않을듯.
+For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert^2 \leq C 2^{-2js}$ for every $j \in \mathbb{Z}$. 
+- 그리고 wavelet system의 orthonormality에 엄청나게 depend하는 증명인 것 같아서 그거 들어내려면 쉽지 않을듯. <br>
 [18 Sep, 2025]
 - 결국엔 Thm3 이전에 나오는 Sobolev characterization으로부터 MRA로 연결해서 $V_j$ space의 error estimation 측정할 수 있게 해주는 결과였음 
 - 그래서 다시 [HW]A first course on wavelets에 있는 Sobolev characterization 주는 충분 조건 살펴봤는데 그게 또 묘하데.... 전반적으로 decay 조건은 약하게 걸어도 되는데 미분 하나가 더 필요하고 원함수의 decay를 좀 세게 걸어주면 된다는데 그냥 어떻게 조립하냐의 문제 같기는 해서 체크해보면 될 듯. 그건 그냥 취향이든 필요한 함수에 따라 뚝딱뚝딱 만들어주면 되는 것 같고, 문제는... orthonormality를 어떻게 약화시킬 것인지일듯.. 그러면서도 여전히 $V_j$와 $W_j$가 충분히 나이스한 관계를 가지도록 설계 어떻게 하지...? 
