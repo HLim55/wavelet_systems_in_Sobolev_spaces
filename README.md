@@ -55,11 +55,13 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert^2 \leq 
 
 ### [2010Ehler]The_multiresolution_structure_of_pairs_of_dual_wavelet_frames_for_a_pair_of_Sobolev_spaces
 
-- 앞선 Mallat의 Thm3에 따르면 결국 MRA hierarchy, 즉, \(V_j \subset V_{j+1}\) 과 \(V_j \oplus W_j = V_{j+1}\), 이 많은 것들을 자연스럽게 주는데 그 시작이 *scaling relation*과 *scaling function의 \(V_0\)에서의 orthonormality*인데<br>
-우리가 orthonormality를 약화시켜서, tight wavelet frame이든 dual frames든 그 관련된 MRA space들 (\(V_j, W_j\) 중 어떤 공간이 남고 각 공간의 관계가 어떻게 되는지도 모르고 있는 것 같아서 그 것에 대한 파악이 우선이라는 생각이 듬. <br>
+- 앞선 Mallat의 Thm3에 따르면 결국 MRA hierarchy, 즉, $V_j \subset V_{j+1}$ 과 $V_j \oplus W_j = V_{j+1}$, 이 많은 것들을 자연스럽게 주는데 그 시작이 *scaling relation*과 *scaling function의 $V_0$에서의 orthonormality*인데
+
+우리가 orthonormality를 약화시켜서, tight wavelet frame이든 dual frames든 그 관련된 MRA space들 ($V_j, W_j$) 중 어떤 공간이 남고 각 공간의 관계가 어떻게 되는지도 모르고 있는 것 같아서 그 것에 대한 파악이 우선이라는 생각이 듬. 
+
 그 공간들이 있어야 projection도 하고 error estimate도 할테니까... 
 
-=> 그래서 일단 [2010Ehler]로 시작. [2008KimKimLim] paper에서 UEP로 부터 만들어지는 모든 TWF에서는 \(W_0 = V_1\)가 된다는 것을 보였다고 하고 그의 확장이라고 함. 넘나 충격적..... 둘 다 자세히 읽어봐야될 것 같음. 일단 이 페이퍼 언어가 굉장히 친숙해서 그게 정말 좋음.
+=> 그래서 일단 [2010Ehler]로 시작. [2008KimKimLim] paper에서 UEP로 부터 만들어지는 모든 TWF에서는 $W_0 = V_1$가 된다는 것을 보였다고 하고 그 결과의 확장이라고 함. 넘나 충격적..... 둘 다 자세히 읽어봐야될 것 같음. 일단 이 페이퍼 언어가 굉장히 친숙해서 그게 정말 좋음.
 
 
 
