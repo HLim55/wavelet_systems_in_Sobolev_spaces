@@ -50,3 +50,16 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert^2 \leq 
 [18 Sep, 2025]
 - 결국엔 Thm3 이전에 나오는 Sobolev characterization으로부터 MRA로 연결해서 $V_j$ space의 error estimation 측정할 수 있게 해주는 결과였음 
 - 그래서 다시 [HW]A first course on wavelets에 있는 Sobolev characterization 주는 충분 조건 살펴봤는데 그게 또 묘하데.... 전반적으로 decay 조건은 약하게 걸어도 되는데 미분 하나가 더 필요하고 원함수의 decay를 좀 세게 걸어주면 된다는데 그냥 어떻게 조립하냐의 문제 같기는 해서 체크해보면 될 듯. 그건 그냥 취향이든 필요한 함수에 따라 뚝딱뚝딱 만들어주면 되는 것 같고, 문제는... orthonormality를 어떻게 약화시킬 것인지일듯.. 그러면서도 여전히 $V_j$와 $W_j$가 충분히 나이스한 관계를 가지도록 설계 어떻게 하지...? 
+
+[23 Sep, 2025]
+
+### [2010Ehler]The_multiresolution_structure_of_pairs_of_dual_wavelet_frames_for_a_pair_of_Sobolev_spaces
+
+- 앞선 Mallat의 Thm3에 따르면 결국 MRA hierarchy, 즉, \(V_j \subset V_{j+1}\) 과 \(V_j \oplus W_j = V_{j+1}\), 이 많은 것들을 자연스럽게 주는데 그 시작이 *scaling relation*과 *scaling function의 \(V_0\)에서의 orthonormality*인데<br>
+우리가 orthonormality를 약화시켜서, tight wavelet frame이든 dual frames든 그 관련된 MRA space들 (\(V_j, W_j\) 중 어떤 공간이 남고 각 공간의 관계가 어떻게 되는지도 모르고 있는 것 같아서 그 것에 대한 파악이 우선이라는 생각이 듬. <br>
+그 공간들이 있어야 projection도 하고 error estimate도 할테니까... 
+
+=> 그래서 일단 [2010Ehler]로 시작. [2008KimKimLim] paper에서 UEP로 부터 만들어지는 모든 TWF에서는 \(W_0 = V_1\)가 된다는 것을 보였다고 하고 그의 확장이라고 함. 넘나 충격적..... 둘 다 자세히 읽어봐야될 것 같음. 일단 이 페이퍼 언어가 굉장히 친숙해서 그게 정말 좋음.
+
+
+
