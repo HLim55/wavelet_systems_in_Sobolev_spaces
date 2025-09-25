@@ -56,8 +56,7 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert^2 \leq 
 ### [2010Ehler]The_multiresolution_structure_of_pairs_of_dual_wavelet_frames_for_a_pair_of_Sobolev_spaces
 
 - 앞선 Mallat의 Thm3에 따르면 결국 MRA hierarchy, 즉, $V_j \subset V_{j+1}$ 과 $V_j \oplus W_j = V_{j+1}$, 이 많은 것들을 자연스럽게 주는데 그 시작이 **scaling relation**과 **scaling function의** $V_0$ **에서의 orthonormality**인데, 우리가 orthonormality를 약화시켜서, tight wavelet frame이든 dual frames든 그 관련된 MRA space들 ($V_j, W_j$) 중 어떤 공간이 남고 각 공간의 관계가 어떻게 되는지도 모르고 있는 것 같아서 그 것에 대한 파악이 우선이라는 생각이 듬.<br>
-그 공간들이 있어야 projection도 하고 error estimate도 할테니까... 
-
+그 공간들이 있어야 projection도 하고 error estimate도 할테니까... <br>
 => 그래서 일단 [2010Ehler]로 시작. [2008KimKimLim] paper에서 UEP로 부터 만들어지는 모든 TWF에서는 $W_0 = V_1$가 된다는 것을 보였다고 하고 그 결과의 확장이라고 함. 넘나 충격적..... 둘 다 자세히 읽어봐야될 것 같음. 일단 이 페이퍼 언어가 굉장히 친숙해서 그게 정말 좋음.
 
 [25 Sep, 2025]
@@ -66,14 +65,14 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert^2 \leq 
 
 - See Theorem 1.2.
 - 핵심은 **UEP로 부터 만들어진 *거의 모든* TWF은 $W_0 = V_1$가 된다** <br>
-제외되는 경우는 *if there exists an highpass filter $m_j$ such that other highpass filters $m_i$ can be written by $m_i = \lambda_i m_j$*, <br>
-즉 하나의 하이패스 필터의 constant multiple로 다른 highpass filter를 모두 적어낼 수 있는, 그런 필터가 존재하지 않는 UEP를 만족하는 TWF은 $W_0 = V_1$을 만족할 수 밖에 없다는 결과.
-- $W_0=V_1$이 될 때 임의의 j에 대해서 어떤 관계를 만족하는지까지 체크해보고 싶긴 함. $V_0=\{0\}$이 될 수 밖에 없다는걸까? 
+제외되는 경우는 *if there exists an highpass filter* $m_j$ *such that other highpass filters* $m_i$ *can be written by* $m_i = \lambda_i m_j$*, <br>
+즉, 하나의 하이패스 필터의 constant multiple로 다른 highpass filter를 모두 적어낼 수 있는 그런 필터가 존재하지 않는, UEP를 만족하는, TWF은 $W_0 = V_1$을 만족할 수 밖에 없다는 결과.
+- $W_0=V_1$이 될 때 임의의 $j$에 대해서 어떤 관계를 만족하는지까지 체크해보고 싶긴 함. $V_0=\{0\}$이 될 수 밖에 없다는걸까? 
 => **$V_j$와 $W_j$와의 관계를 좀 더 파봐야지 projection하는 것에서 잘 나눠질 수 있을거라 이걸 잘 알아야될 듯.** 근데 사실 꼭 이 paper로 볼 필요는 없음. Ehler로 봐도 됨.
-- 그럼에도 불구하고 Shift-invariant space $S:=\mathcal{S}(\Phi)$와 그 것의 fiber $S_{||x} := \{(\widehat{f}(x +k))_{k \in \mathbb{Z}^d}: f \in S\}$와 spectrum $\sigma(S) := \{x \in \mathbb{T}^d : S_{||x} \not= \{0\} \}$를 처음으로 마음으로 받아들일 수 있었다. 
-=> 구체적으로 말하자면 shift invariant space에서 fiber와 spectrum의 쓸모?
-=> shift-invariant space에서는 $f \in S \Rightarrow T_k f \in S$이기 때문에 $\widehat{f} \in \mathcal{S} \Rightarrow \widehat{f} e^{-2\pi i k \cdot \xi} \in \mathcal{S}$가 됨. 즉, $\mathcal{S}$가 modulation $e^{-2\pi i k \cdot \xi}$에 대해 닫혀있음<br>
-그래서 fiber를 정의할 때 $(\widehat{f}(\xi + k))_{k \in \mathbb{Z}^d}$, $\xi \in \mathbb{T}^d$만을 조사하면 modulation을 통해 shift-invariant space의 함수를 모두 복구할 수 있게 됨. <br>
+- 그럼에도 불구하고 Shift-invariant space $S:=\mathcal{S}(\Phi)$와 그 것의 fiber $S_{\Vert x} := \{(\widehat{f}(x +k))_{k \in \mathbb{Z}^d}: f \in S\}$와 spectrum $\sigma(S) := \{x \in \mathbb{T}^d : S_{||x} \not= \{0\} \}$를 처음으로 마음으로 받아들일 수 있었다. <br>
+=> 구체적으로 말하자면 shift invariant space에서 fiber와 spectrum의 쓸모?<br>
+=> shift-invariant space에서는 $f \in S \Rightarrow T_k f \in S$이기 때문에 $\widehat{f} \in \widehat{S} \Rightarrow \widehat{f} e^{-2\pi i k \cdot \xi} \in \widehat{S}$가 됨. 즉, $\widehat{S}$가 modulation $e^{-2\pi i k \cdot \xi}$에 대해 닫혀있음<br>
+그래서 fiber를 정의할 때 $(\widehat{f}(\xi + k))_{k \in \mathbb{Z}^d}$, $\xi \in \mathbb{T}^d$,만을 조사하면 modulation을 통해 shift-invariant space의 함수를 모두 복구할 수 있게 됨. <br>
 뭐 그 의미만 있는 건 아니지만 나는 이러한 이유로 이걸 보는 의미가 있겠다는 의미를 스스로 챙길 수 있었음. <br>
 원래 $\mathbb{R}^d$의 것들을 그냥 와장창 기억했다면 그걸 분할해서 fiber로 의미를 부여하게하는? 그정도의 느낌<br>
 그래서 그러한 fiber의 정의대로라면 spectrum은 말하자면 nontrivial한(0이 아닌) $x \in \mathbb{T}^d$점들을 모아놓은 의미있는 점들의 집합 같은 느낌. 재밌다재미따
