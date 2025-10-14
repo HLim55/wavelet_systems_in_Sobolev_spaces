@@ -84,5 +84,5 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert_{L^2}^2
 - See Corollary 3.4.1 with $p = q_1 = q_2 = 2$.
 - 찐찐찐 원하는 결과 찾음! 이전 Mallat의 결과는 error estimate을 L2로 하는 반면 이건 찐 Sobolev norm으로 잼:
 
-$\lVert f - P_j f \rVert_{W^{s,2}} \leq 2^{-j(t-s)} \lVert f \rVert_{W^{t,2}}.$
+	$\lVert f - P_j f \rVert_{W^{s,2}} \leq 2^{-j(t-s)} \lVert f \rVert_{W^{t,2}}.$
 - 보통 **Jackson-type**의 projection error estimation이라고 부르는 듯..
