@@ -45,7 +45,7 @@ Scrutinize every wavelet system in Sobolev spaces!
 - 그토록 찾아 헤매던 approximation error에 관한 결과
 - 근데 정확히 원하는 형태인지는 좀 더 체크해봐야됨. 생각보다 조금은 거리가 있는 것 같긴해서 원하는 것에서 얼마나 먼지 체크해봐야댐<br>
 => 일단은 원하는 error estimate은 맞음.. [18 Sep, 2025]<br>
-For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert^2 \leq C 2^{-2js}$ for every $j \in \mathbb{Z}$. 
+For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert_{L^2}^2 \leq C 2^{-2js}$ for every $j \in \mathbb{Z}$. 
 - 그리고 wavelet system의 orthonormality에 엄청나게 depend하는 증명인 것 같아서 그거 들어내려면 쉽지 않을듯. <br>
 [18 Sep, 2025]
 - 결국엔 Thm3 이전에 나오는 Sobolev characterization으로부터 MRA로 연결해서 $V_j$ space의 error estimation 측정할 수 있게 해주는 결과였음 
@@ -65,14 +65,24 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert^2 \leq 
 
 - See Theorem 1.2.
 - 핵심은 **UEP로 부터 만들어진 *거의 모든* TWF은 $W_0 = V_1$가 된다** <br>
-제외되는 경우는 *if there exists an highpass filter* $m_j$ *such that other highpass filters* $m_i$ *can be written by* $m_i = \lambda_i m_j$*, <br>
+제외되는 경우는 *if there exists an highpass filter* $m_j$ *such that other highpass filters* $m_i$ *can be written by* $m_i = \lambda_i m_j$, <br>
 즉, 하나의 하이패스 필터의 constant multiple로 다른 highpass filter를 모두 적어낼 수 있는 그런 필터가 존재하지 않는, UEP를 만족하는, TWF은 $W_0 = V_1$을 만족할 수 밖에 없다는 결과.
-- $W_0=V_1$이 될 때 임의의 $j$에 대해서 어떤 관계를 만족하는지까지 체크해보고 싶긴 함. $V_0=\{0\}$이 될 수 밖에 없다는걸까? 
+- $W_0=V_1$이 될 때 임의의 $j$에 대해서 어떤 관계를 만족하는지까지 체크해보고 싶긴 함. $V_0=\{0\}$이 될 수 밖에 없다는걸까?<br>
 => **$V_j$와 $W_j$와의 관계를 좀 더 파봐야지 projection하는 것에서 잘 나눠질 수 있을거라 이걸 잘 알아야될 듯.** 근데 사실 꼭 이 paper로 볼 필요는 없음. Ehler로 봐도 됨.
 - 그럼에도 불구하고 Shift-invariant space $S:=\mathcal{S}(\Phi)$와 그 것의 fiber $S_{\Vert x} := \{(\widehat{f}(x +k))_{k \in \mathbb{Z}^d}: f \in S\}$와 spectrum $\sigma(S) := \{x \in \mathbb{T}^d : S_{||x} \not= \{0\} \}$를 처음으로 마음으로 받아들일 수 있었다. <br>
 => 구체적으로 말하자면 shift invariant space에서 fiber와 spectrum의 쓸모?<br>
-=> shift-invariant space에서는 $f \in S \Rightarrow T_k f \in S$이기 때문에 $\widehat{f} \in \widehat{S} \Rightarrow \widehat{f} e^{-2\pi i k \cdot \xi} \in \widehat{S}$가 됨. 즉, $\widehat{S}$가 modulation $e^{-2\pi i k \cdot \xi}$에 대해 닫혀있음<br>
+=> shift-invariant space에서는 $f \in S \Rightarrow T_k f \in S$이기 때문에 $\widehat{f} \in \widehat{S} \Rightarrow \widehat{f} e^{-2\pi i k \cdot \xi} \in \widehat{S}$가 됨. 즉, $\widehat{S}$가 modulation $e^{-2\pi i k \cdot \xi}$에 대해 닫혀있음.<br>
 그래서 fiber를 정의할 때 $(\widehat{f}(\xi + k))_{k \in \mathbb{Z}^d}$, $\xi \in \mathbb{T}^d$,만을 조사하면 modulation을 통해 shift-invariant space의 함수를 모두 복구할 수 있게 됨. <br>
 뭐 그 의미만 있는 건 아니지만 나는 이러한 이유로 이걸 보는 의미가 있겠다는 의미를 스스로 챙길 수 있었음. <br>
-원래 $\mathbb{R}^d$의 것들을 그냥 와장창 기억했다면 그걸 분할해서 fiber로 의미를 부여하게하는? 그정도의 느낌<br>
+원래 $\mathbb{R}^d$의 것들을 그냥 와장창 기억했다면 그걸 분할해서 fiber로 의미를 부여하게하는? 그정도의 느낌.<br>
 그래서 그러한 fiber의 정의대로라면 spectrum은 말하자면 nontrivial한(0이 아닌) $x \in \mathbb{T}^d$점들을 모아놓은 의미있는 점들의 집합 같은 느낌. 재밌다재미따
+
+[14 Oct, 2025]
+
+### [Cohen]Numerical Analysis of Wavelet Methods
+
+- See Corollary 3.4.1 with $p = q_1 = q_2 = 2$.
+- 찐찐찐 원하는 결과 찾음! 이전 Mallat의 결과는 error estimate을 L2로 하는 반면 이건 찐 Sobolev norm으로 잼:
+
+$\lVert f - P_j f \rVert_{W^{s,2}} \leq 2^{-j(t-s)} \lVert f \rVert_{W^{t,2}}.$
+- 보통 **Jackson-type**의 projection error estimation이라고 부르는 듯..
