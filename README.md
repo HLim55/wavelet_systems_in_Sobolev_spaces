@@ -86,3 +86,4 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert_{L^2}^2
 
 	$\lVert f - P_j f \rVert_{W^{s,2}} \leq 2^{-j(t-s)} \lVert f \rVert_{W^{t,2}}.$
 - 보통 **Jackson-type**의 projection error estimation이라고 부르는 듯..
+- Biorthogonal한 wavelet system에 대한 결과 (일단은 orthonormal system에 대해서 제한해서 보기).
