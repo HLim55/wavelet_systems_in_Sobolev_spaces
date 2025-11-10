@@ -85,5 +85,16 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert_{L^2}^2
 - 찐찐찐 원하는 결과 찾음! 이전 Mallat의 결과는 error estimate을 L2로 하는 반면 이건 찐 Sobolev norm으로 잼:
 
 	$\lVert f - P_j f \rVert_{W^{s,2}} \leq 2^{-j(t-s)} \lVert f \rVert_{W^{t,2}}.$
-- 보통 **Jackson-type**의 projection error estimation이라고 부르는 듯..
+- \sout{보통 **Jackson-type**의 projection error estimation이라고 부르는 듯..}
 - Biorthogonal한 wavelet system에 대한 결과 (일단은 orthonormal system에 대해서 제한해서 보기).
+
+[10 Nov, 2025]
+
+- Cohen에서는 Jackson-type, Bernstein-type Inequality 이용해서 Sobolev space에서의 error estimation했음.
+	- Jackson-type (Direct) Inequality는 함수가 충분한 smoothness가 있을 때 approximation이 충분히 잘 되는 것을 보임:
+	$$\lVert f - P_j f \rVert_{L^2} \leq 2^{-nj} C \lvert f \rvert_{W^{n,2}}. $$
+	- Bernstein-type (Inverse) Inequality는 approximation에 들어가는 함수에 대해 $L^2$ smoothness로 부터 더 smooth 한 성질을 보일 수 있음:
+	$$\lVert f \rVert_{W^{n,2}} \leq C 2^{nj} \lVert f \rVert_{L^2}$$
+
+- 즉 이 때, approximation space를 고려해줄 수 있어야 함. 
+- 이게 frame이 되면 그 때 approximation space과 projection operator를 어떻게 잡아야하는지 고민해보기.
