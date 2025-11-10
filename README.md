@@ -98,3 +98,5 @@ For $f \in H^s$, there exists \(C>0\) such that $\lVert f - P_j f \rVert_{L^2}^2
 
 - 즉 이 때, approximation space를 고려해줄 수 있어야 함. 
 - 이게 frame이 되면 그 때 approximation space과 projection operator를 어떻게 잡아야하는지 고민해보기.
+	- 이전에 공부하던 frame일 때 $W_0 = V_1$을 사용해서 approximation을 구성하는 방향
+	- 아니면 더 이전에 공부하던 Bui, Laugesen으로 돌아가서 봐야할지도. 위의 방향으로 잘 된다하더라도 실제론 frame이 생각보다 유연하게 생기지 않았을 수도 있고, constructive하지 않을 수도 있으니까 따로 조건 찾아 줄 수 있는 Bui, Laugesen or Kyriazis Lp를 다시 들여다봐야될지도
